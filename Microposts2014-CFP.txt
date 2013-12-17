@@ -16,12 +16,13 @@ THEME
 	
 Making Sense of Microposts: Big things come in small packages
 				
-Microposts, such as Twitter status updates, Instagram likes and photos and Foursquare checkins, form a notable part of published web content. Smart phones, after overtaking sales of personal computers in 2012, now play a significant role in enabling ubiquitous communication, and have contributed to the steep increase in publication of Microposts, via native mobile apps and mobile-specific web sites. The increase in Micropost publication is evident across Twitter, where 500 million posts are now published every day, up from 175 million in 2012. Facebook sees 30 billion pieces of content shared on it every month. Such statistics reflect the growing production and consumption of data by users and the widespread sharing of information through social networks. The utility of Microposts is such that we are now providing up-to-date information about a range of topics formed in disparate contexts, providing information about emerging events, online presence, emergency response and crowd movement. Being able to make sense of Microposts therefore impacts on the ability to act upon information quickly and effectively, and aids the understanding of evolving user behaviour, events and public perception and opinion about their worlds. 
+Microposts, such as Twitter status updates, Instagram likes and photos and Foursquare checkins, form a notable part of published web content. Smart phones, after overtaking sales of personal computers in 2012, now play a significant role in enabling ubiquitous communication, and have contributed to the steep increase in publication of Microposts, via native mobile apps and mobile-specific web sites. The increase in Micropost publication is evident across Twitter, where 500 million posts are now published every day, up from 175 million in 2012. Facebook sees 30 billion pieces of content shared on it every month. Such statistics reflect the growing production and consumption of data by users and the widespread sharing of information through social networks. The utility of Microposts is such that we are now providing up-to-date information about a range of topics formed in disparate contexts, providing information about emerging events, online presence, emergency response and crowd movement. Being able to make sense of Microposts therefore impacts on the ability to act upon information quickly and effectively, and aids the understanding of evolving user behaviour, events and public perception and opinion about their worlds.
 
-The central objective of the #Microposts workshop is to bring together researchers from multiple disciplines to discuss and debate current efforts toward analysing and understanding Microposts. We define a Micropost as information published on the Web that is small in size (e.g. a Tweet, Facebook share, Instagram like) and that requires minimal effort to publish. Although individual Microposts are small, collectively they provide a rich source of current information about a range of topics across all walks of life. Gleaning information from such content effectively requires a degree of understanding of what is being discussed and, with very large amounts, semi- to fully automated analytical and extraction approaches. 
-The workshop aims to provide a forum to enable discussion and hence, improve understanding of social and cultural phenomena that influence the publication and reuse of Microposts; and to discuss applications of Micropost data in a variety of contexts, including emergency response, crowd and event tracking, public opinion and sentiment analysis. Enabling the understanding and application of Micropost content requires analytical techniques and tools that function at scale and that can handle the high rate at which Microposts are published. The workshop invites submissions that deal with publication rate and scale, and approaches that facilitate understanding of Microposts through their semantics and where available, contextual information. 
+The central objective of the #Microposts workshop is to bring together researchers from multiple disciplines to discuss and debate current efforts toward analysing and understanding Microposts. We define a Micropost as information published on the Web that is small in size (e.g. a Tweet, Facebook share, Instagram like) and that requires minimal effort to publish. Although individual Microposts are small, collectively they provide a rich source of current information about a range of topics across all walks of life. Gleaning information from such content effectively requires a degree of understanding of what is being discussed and, with very large amounts, semi- to fully automated analytical and extraction approaches.
+The workshop aims to provide a forum to enable discussion and hence, improve understanding of social and cultural phenomena that influence the publication and reuse of Microposts; and to discuss applications of Micropost data in a variety of contexts, including emergency response, crowd and event tracking, public opinion and sentiment analysis. Enabling the understanding and application of Micropost content requires analytical techniques and tools that function at scale and that can handle the high rate at which Microposts are published. The workshop invites submissions that deal with publication rate and scale, and approaches that facilitate understanding of Microposts through their semantics and where available, contextual information.
 
 Microposts are both a technical and a social phenomenon, and the nature of the challenge related to their treatment is therefore multi-disciplinary. We continue to promote a multidisciplinary workshop, as achieved in the past three in the series, by also encouraging social scientists and other non-Computer Science researchers to submit work that looks at the theories behind Micropost usage and communication through this medium. The workshop also encourages demonstration of practical application of the results of analysis of Micropost data, both within the research community and in everyday, real-world scenarios. We encourage submissions using this and last year’s challenge data for contributions to the main track.
+
 
 
 
@@ -30,7 +31,7 @@ TOPICS OF INTEREST
 
 The workshop will focus on topics including, but not exclusive to, the three areas below: 
 
-Data mining from Microposts
+-Data mining from Microposts
 -Emergent semantics
 -Opinion mining, sentiment and sentic analysis
 -Network analysis and community detection
@@ -64,9 +65,9 @@ Applications
 ENTITY EXTRACTION & DISAMBIGUATION CHALLENGE
 ----------------------------
 
-#Microposts2014 will host an 'Entity Extraction & Disambiguation Challenge', where participants must label Microposts in a given dataset with the entities referenced and their semantic web URIs. Existing entity extraction and
-disambiguation tools are intended for use over news corpora and similar document-based corpora with relatively long length. The aim of the challenge is to foster research into novel, more accurate entity extraction and disambiguation 
-for (much shorter) Micropost data. Detailed information on how to enter the challenge will be provided in a separate call for challenge submissions as well as on the workshop website.
+#Microposts2014 will host an 'Entity Extraction & Disambiguation Challenge', where participants must label Microposts in a given dataset with the entities referenced and their semantic web URIs. Existing entity extraction and disambiguation tools are intended for use over news corpora and similar document-based corpora with relatively long length. The aim of the challenge is to foster research into novel, more accurate entity extraction and disambiguation for (much shorter) Micropost data. Detailed information on how to enter the challenge will be provided in a separate call for challenge submissions as well as on the workshop website.
+
+
 
 
 
@@ -74,6 +75,8 @@ WORKSHOP STRUCTURE
 -------------------
 
 A keynote address from an invited speaker will open the day. This will be followed by paper presentations. We will hold a poster and demo session to trigger further, in-depth interaction between workshop participants. The last set of presentations will be brief overviews of selected submissions to the Entity Extraction & Disambiguation Challenge The workshop will close with the presentation of awards for the best paper and the highest ranking challenge submission.
+
+
 
 
 SUBMISSIONS
@@ -91,20 +94,25 @@ Submission is via the EasyChair Conference System, at:  https://www.easychair.or
 
 Each submission will receive, in addition to a meta-review, at least 2 peer reviews, with full papers at least 3 peer reviews.
 
-The workshop proceedings will be published through the ACM Digital Library.
+The proceedings for main track of the workshop will be published as part of the WWW2014 proceedings, and indexed as part of the ACM Digital Library. As such, these papers must conform to the following:
+"Any paper published by the ACM, IEEE, etc. which can be properly cited constitutes research which must be considered in judging the novelty of a WWW submission, whether the published paper was in a conference, journal, or workshop. Therefore, any paper previously published as part of a WWW workshop must be referenced and suitably extended with new content to qualify as a new submission to the Research Track at the WWW conference."
+
+
 
 IMPORTANT DATES
 ----------------
 
-Paper Submission deadline: ***7 Jan 2014***
-Paper Notification: 4 Feb 2014
+Paper Submission deadline: *** 10 Jan 2014 ***
+Paper Notification: 04 Feb 2014
 Camera-ready (hard) deadline (short & long papers): 12 Feb 2014
+
+Challenge Dataset release: 14 Jan 2014
+(further detail on challenge will be made available from the workshop website)
 
 (all deadlines 23:59 Hawaii Time)
 
 Workshop program issued: 15 Mar 2014
-Main track proceedings to be published by ACM
-Workshop - 7 April 2014 (Registration open to all)
+Workshop - 07 April 2014 (Registration open to all)
 
 
 
@@ -112,9 +120,14 @@ CONTACT
 -------
 
 E-mail: microposts2014@easychair.org
+Mailing list: microposts2014@googlegroups.com 
+
 Facebook Group: http://www.facebook.com/#!/home.php?sk=group_180472611974910
 Facebook Public Event page: http://www.facebook.com/events/116134955169543
+
+Twitter persona: @microposts2014
 Twitter hashtag: #microposts2014
+
 W3C Microposts Community Group: http://www.w3.org/community/microposts
 
 
@@ -130,43 +143,41 @@ PROGRAM COMMITTEE
 ------------------
 
 Gholam R. Amin, Sultan Qaboos University, Oman
-Pierpaolo Basile, Dipartimento di Informatica, University of Bari, Italy
-Julie Birkholz,  Vrije University, The Netherlands
+Pierpaolo Basile, University of Bari, Italy
+Julie Birkholz, Vrije University, The Netherlands
 Uldis Bojars, SIOC Project
 John Breslin, NUI Galway, Ireland
-Amparo E. Cano, Aston University, UK 
-Marco Antonio Casanova, PUC - Rio, Brazil
-Óscar Corcho, Universidad Politécnica de Madrid, Spain 
-Ali Emrouznejad, Aston Business School, UK
-Guillaume Erétéo, Orange Labs
-Miriam Fernandez, Knowledge Media Institute, The Open University, UK
-Fabien Gandon, Inria, France
-Andrés García-Silva, Ontology Engineering Group, Facultad de Informática, Univesidad Politécnica de Madrid, Spain
-João Magalhães, Universidade Nova de Lisboa, Portugal
-Anna Lisa Gentile, The University of Sheffield, UK
-Jonathan Hickman, Birmingham City University, UK
-Robert Jäschke, L3S Research Center, Germany
+Amparo E. Cano, Aston University, UK
+Marco A. Casanova, Pontifícia Universidade Católica do Rio de Janeiro, Brazil
+Óscar Corcho, Universidad Politécnica de Madrid
+Ali Emrouznejad, Aston Business School, UK Guillaume Erétéo, INRIA, France
+Miriam Fernandez, KMi, The Open University, UK
+Fabien Gandon, INRIA, Sophia-Antipolis, France
+Andrés García-Silva, Universidad Politécnica de Madrid
+Anna Lisa Gentile, University of Sheffield, UK
+Jon Hickman, Birmingham City University, UK
 Jelena Jovanovic, University of Belgrade, Serbia
-Mathieu Lacage, France
-Vitaveska Lanfranchi, The University of Sheffield, UK
+Robert Jäschke, University of Kassel, Germany
+Mathieu Lacage, France Vita Lanfranchi, University of Sheffield, UK
 Philippe Laublet, Université Paris-Sorbonne, France
+João Magalhães, Universidade Nova de Lisboa, Portugal
 Diana Maynard, The University of Sheffield, UK
-José M. Morales-Del-Castillo, El Colegio de México, Mexico
-Fabrizio Orlandi, DERI Galway, Ireland
-Alexandre Passant, seevl.net, MDG Web ltd
-Bernardo Pereira Nunes, PUC-Rio, Brazil
+José M. Morales del Castillo, El Colegio de México, Mexico
+Fabrizio Orlandi, DERI, Galway, Ireland
+Alexandre Passant, seevl.net / MDG Web, Ireland
+Bernardo Pereira Nunes, PUC-Rio, Brazil 
 Danica Radovanovic, Oxford Internet Institute, UK
-Giuseppe Rizzo, Università degli studi di Torino, Italy
-Harald Sack, Hasso-Plattner-Institute for IT Systems Engineering, University of Potsdam, Germany
+Yves Raimond, BBC, UK
+Guiseppe Rizzo, Eurecom, France
+Harald Sack, University of Potsdam, Germany
 Bernhard Schandl, Gnowsis.com
-Sean Siqueira, Federal University of the State of Rio de Janeiro (UNIRIO), Brazil
-Raphaël Troncy, EURECOM, France
-Mischa Tuffield, PeerIndex
-Victoria Uren, Aston University, UK
+Sean W. M. Siqueira, Universidade Federal do Estado do Rio de Janeiro, Brazil
+Raphaël Troncy, Eurecom, France
+Mischa Tuffield, PeerIndex, UK
+Victoria Uren, Aston Business School, UK
 Shenghui Wang, OCLC Research, The Netherlands
-Seth Van Hooland, Universidad Carlos III de Madrid, Spain
 Katrin Weller, GESIS Leibniz Institute for the Social Sciences, Germany
-Ziqi Zhang, The University of Sheffield, UK
+Ziqi Zhang, University of Sheffield, UK 
 
 
 
@@ -184,19 +195,21 @@ Andrea Varga, The University of Sheffield, UK
 Challenge Committee
 --------------------------------
 
-Pierpaolo Basile, Dipartimento di Informatica - University of Bari, Italy
+Ebrahim Bagheri, Ryerson University, Canada
+Pierpaolo Basile, University of Bari, Italy
 Uldis Bojars, SIOC Project
-Óscar Corcho, Universidad Politécnica de Madrid, Spain 
-Guillaume Erétéo, Orange Labs
-Miriam Fernandez, Knowledge Media Institute, The Open University, UK
-Andrés García-Silva, Ontology Engineering Group, Facultad de Informática, Univesidad Politécnica de Madrid, Spain
+Óscar Corcho, Universidad Politécnica de Madrid
+Leon Derczynski, The University of Sheffield, UK
+Guillaume Erétéo, INRIA, France
+Miriam Fernandez, The Open University, UK
+Andrés García-Silva, Universidad Politécnica de Madrid
 Anna Lisa Gentile, The University of Sheffield, UK
-Robert Jäschke, L3S Research Center, Germany
-Diana Maynard,  TheUniversity of Sheffield, UK
-José M. Morales-Del-Castillo, El Colegio de México, Mexico
+Robert Jäschke, University of Kassel, Germany
+Diana Maynard, The University of Sheffield, UK
+José M. Morales del Castillo, El Colegio de México, Mexico
 Georgios Paltoglou, University of Wolverhampton, UK
 Bernardo Pereira Nunes, PUC-Rio, Brazil
 Daniel Preoţiuc-Pietro, The University of Sheffield, UK
-Raphaël Troncy, EURECOM, France
+Raphaël Troncy, Eurecom, France
 Mischa Tuffield, PeerIndex
-Victoria Uren, Aston University, UK
+Victoria Uren, Aston University, UK 
