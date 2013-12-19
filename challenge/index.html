@@ -134,27 +134,101 @@
               
 
                 <div class="sectionwithinset" id="introduction">
-                  <h3><a name="introduction" id="introduction"></a>Entity Extraction  &amp; Disambiguation Challenge</h3>
+                  <h3><a name="introduction" id="introduction"></a>Entity Extraction  &amp; Linking Challenge</h3>
                   
-                  <p>Theme: <i><b>Making Sense of Microposts</b>: Big things come in small packages</i></p>
+                  <!--p>Theme: <i><b>Making Sense of Microposts</b>: Big things come in small packages</i></p-->
                   <!-- p>Award Sponsor: <i><b>eBay</b></i></p -->
                   
-                  <p>#Microposts2014 will host an 'Entity Extraction and Disambiguation Challenge'. Details to come soon</p>
-</p>
+                    <p>Microposts are a highly popular medium to share facts, opinions or emotions. They are an invaluable wealth of data, ready to be mined for training predictive modelings. This year the #Microposts 2014 Workshop will host an "Entity Extraction and Linking Challenge".</p>
+                     <p>The overall task of the challenge is to automatically extract entities from English microposts, and link them to the corresponding English DBpedia v3.9 resources (if the linkage exists). As linking stage we aim to to disambiguate expressions that are formed by discrete (and typically short) sequences of words.</p>
+                     <p>Existing entity linking tools are intended for use over news corpora and similar document-based corpora with relatively long length. We organise this challenge to foster research into novel, more accurate solutions for the automatic entity linking in (much shorter) micropost data.</p>
+                     <p>We will ask the participants to automatically extract entities (e.g., Obama, London, Rakuten)  belonging to all entity types (e.g., Person, Location, Organisation) from a collection of microposts. Participants will have to automatically provide context-relevant DBpedia resources for each entity in a micropost.</p>
                   
                   <!-- <p><img src="../images/blank_space.png" height=35></p> -->
                       
+       
+               </div>
+
+<div class="section" id="dataset">
+    <h4><a name="dataset" id="dataset"></a>Dataset</h4>
+    <p> The dataset comprises of 3.5K tweets extracted from a much larger collection of over 18 million tweets. This collection, provided by the <a href="http://demeter.inf.ed.ac.uk/redites/">Redites project</a>, covers event-annotated tweets collected for the period of 15th July 2011 to 15th August 2011 (31 days). It extends over multiple noteworthy events including the death of Amy Winhehouse, the London Riots and the Oslo bombing. Since the task of this challenge is to automatically extract and link entities, we have built our dataset considering both event and non-event tweets. While event tweets are more likely to contain entities, non-event tweets enable us to evaluate the performance of the system in avoiding false positives in the entity extraction phase.</p>
+    
+   <p> The dataset has been split into a training (70%) and testing (30%) sets. Following the Twitter TOS we will only provide tweet IDs and annotations for the training set; and tweet IDs for the test set. We will also provide a common framework to mine these datasets from Twitter.</p>
+    <p>
+    The training set will be released as tsv file where each line consists of :</p>
+    <ul>
+    <li>tweet_id</li>
+    <li> entity_mention_1</li>
+    <li> entity_uri_1</li>
+    <li> ...</li>
+    <li> entity_mention_n</li>
+    <li> entity_uri_n</li>
+    </ul>
+   <p> Tokens are separated by TABs. Entity mentions and uris are listed according to their appearance order in the tweet.</p>
+    
+    <p>We will timely advertise the release of the data sets on the workshop mailing list. Please subscribe to the <a href="https://groups.google.com/d/forum/microposts2014">#Microposts2014 google group</a>. </p>
+    
+</div>
+                  
+<div class="section" id="submission">
+    <h4><a name="submission" id="submission"></a> Evaluation &amp; Submission</h4>
+  
+    <h5>Evaluation of accuracy</h5>
+    <p>
+    The evaluation consists of two separated stages:</p>
+    <ul>
+    <li>Paper peer review : A community of experts of the domain will judge the quality and applicability of the approaches taken, to provide useful insights on your research;</li>
+    <li> Precision and Recall:  F1 (F-measure with beta = 1) will be computed on a gold standard manually created from the test set. The automatically extracted entities and links will be both matched against this ground truth. </li>
+        </ul>
+    
+    <p>All submissions will be only ranked according to the F1 of each best submission.</p>
+    
+          <p>&nbsp;</p>
+     <h5>Submission: </h5>
+    <p>
+    Submissions should be provided as a zip file using your system name as the file name (e.g. 'awesome.zip'), containing:
+    <ul>
+        <li> a TSV file with your system name (e.g. 'awesome.tsv'). We accept up to 3 different submissions, and we will consider *only* the best. If you do so you must specify clearly in your paper the modifications applied to each labelled submission. In this case the submission should contain each of up to 3 TSV files with the tool/system name with "_n" appended to each (e.g. awesome_1.tsv, awesome_2.tsv, awesome_3 ).
+    In order to evaluate your submissions we require you to submit a tsv file following the format in which the training set is provided.</li>
+    
+   <li> a paper of 6 pages describing your approach and how you tuned/tested it using the training split. All submissions must be in English. Submissions must be in PDF formatted in the style of the Springer Publications format for <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">Lecture Notes in Computer Science (LNCS)</a>. For details on the LNCS style, see Springer's Author Instructions. All submissions are not anonymous. Please send us your submission before the deadline through <a href="https://www.easychair.org/conferences/?conf=microposts2014">Easychair</a>. All accepted submissions will be invited for short presentations during the #Microposts2014 workshop and will be published independently from the workshop proceedings on the challenge page and on <a href="http://ceur-ws.org/">CEUR</a> (note that a minimum number of papers should be submitted in order to be able to publish them on CEUR).</li>
+</ul>
+    </p>
+
+</div>
+                  <div class="section" id="prize">
+                   <h4><a name="prize" id="prize"></a> Prize </h4>
+                      To be announced
+                      
+                  </div>
+                  
+<div class="section" id="dates">
+     <h4><a name="dates" id="dates"></a> Important Dates </h4>
+    <ul>
+        <li>Intent to participate: 13 Jan 2014(soft)</li>
+        <li>Release of training set: 14 Jan 2014</li>
+        <li>Release of test set: 17 Feb 2014</li>
+        <li>Challenge Submission deadline: 21 Feb 2014 (hard)</li>
+        <li>Challenge Notification: 14 Mar 2014  (hard)</li>
+        <li>Challenge camera-ready deadline: 24 Mar 2014 (hard)</li>
+       </ul>
+     <ul>
+        <li>Workshop program issued: 15 Mar 2014</li>
+        <li>Challenge proceedings to be published via CEUR</li>
+        <li>Workshop - 07 Apr 2014 (Registration open to all)
+        (All deadlines 23:59 Hawaii Time)</li>
+    </ul>
+    </div>
+                  
+<div class="section" id="challenge_committee">
     <h4>Challenge Chairs</h4>
-    <p><a href="http://people.kmi.open.ac.uk/cano" target="_blank">A. Elizabeth Cano</a>, KMi, The Open University, UK</p>
+    <p><a href="http://people.kmi.open.ac.uk/cano" target="_blank">A. Elizabeth Cano</a>, Aston University, UK</p>
     <p><a href="http://www.di.unito.it/~rizzo" target="_blank">Giuseppe Rizzo</a>, Eurecom, France</p>
     
     <p>&nbsp;</p>
     <h4>Challenge Dataset Chair</h4>
     <p><a href="http://www.dcs.shef.ac.uk/~andrea" target="_blank">Andrea Varga</a>, The University of Sheffield, UK</p>
-    
-               </div>
 
-<div class="section" id="challenge_committee">
     
     <p>&nbsp;</p>
     <h4>Evaluation  Committee</h4>
@@ -192,6 +266,21 @@
 
 <!-- <p><img src="../images/blank_space.png" height=125></p> -->
 </div>
+<div class="section" id="contact">
+    <h4>Contact #Microposts2014 </h4>
+    <ul>
+    <li>E-mail: microposts2014@easychair.org</li>
+    <li><a href="http://www.facebook.com/#!/home.php?sk=group_180472611974910">Facebook Group</a></li>
+    <li><a href="http://www.facebook.com/events/116134955169543">Facebook Public Event page</li>
+    <li><a href="https://groups.google.com/forum/#!forum/microposts2014">Google group</a></li>
+    <li>Twitter hashtag: #microposts2014challenge</li>
+    <li>Twitter account: @Microposts2014</li>
+    <li><a href="http://www.w3.org/community/microposts">W3C Microposts Community Group</a></li>
+    </ul>
+</div>
+                  
+                  
+                  
 
               </div><!-- end div - main -->
               <!-- InstanceEndEditable -->
