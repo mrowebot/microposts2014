@@ -1,0 +1,347 @@
+This package contains: 
+-  Microposts2014-NEEL_Dataset-Train.GS: final training set (version 1.9)
+-  Microposts2014-NEEL_Dataset-Test.GS: final test set (version 1.2)
+-  Microposts2014-NEEL_Dataset.GS: final gold standard dataset (joint training and test set)
+-  Microposts2014-NEEL_Annotation_Guidelines.pdf : final guidelines (version 1.3)
+
+The training set structure is as follows:
+tweet_id	tweet_text	entity_mention_1	entity_uri_1	...	entity_mention_n	entity_uri_n
+
+where:
+tweet_text is quoted;
+(entity_mention_1, entity_uri_i) is optional.
+
+In the case a row ends with the tweet_text then it means no entities have been spotted. 
+
+====================================================
+Change Log
+
+-----------------------------------------------------------------
+2014.01.20 -TRAINING (version 1.0.), Guidelines (version 1.0.)
+
+******** Gold standard TRAINING dataset ********
+-First version of GS training dataset created
+
+******** Guidelines ********
+-First version of #Microposts2014 Named Entity Extraction and Linking Challenge (NEEL) created
+
+-----------------------------------------------------------------
+2014.01.21 -TRAINING (version 1.1.)
+
+******** Gold standard TRAINING dataset ********
+-Following diego.ceccarelli@gmail.com's comments, the annotations for the 94454436155494400, 94960661582450690 ,98869744505073665 tweets have been altered by adding few missing URIs for the tweets.
+-Following s.dlugolinsky@gmail.com's comments, the annotations for the 92876105060581376 ("/resources/" => "/resource/", swap order of entities), 93672807057203201 ("http://dbpedia.org/resource/DeMaurice_ Smith" => "http://dbpedia.org/resource/DeMaurice_Smith") tweets have been updated.
+
+-----------------------------------------------------------------
+2014.01.24 -TRAINING (version 1.2.)
+
+******** Gold standard TRAINING dataset ********
+-Following menabad@gmail.com's comments, the annotations for the following tweets have been altered:
+91742927059030016 (quates); 92033712904093696 (income tax);92624558737195008(Aquarians); 91957731992420352 (swap order);91961808604237824;
+91996995715219457 (Internet commerce - http://dbpedia.org/resource/E-commerce); 91986216400076800 (swap order); 
+92205398123216896 - (Ohi nuclear plant); 92237433697091584 (swap order); 92321082564030464(swap);
+92398639233777664(swap);92640767331418113(St. Clair);92645861737246720(sharm el sheikh);
+92791449166422017(swap);92856534454906880(Thai-Cambodia dispute);
+92934213975805952(Junhyung);92962155711827968(+LCpl, British soldier);
+92956597957050369(+iPhone, -iPhone 5);93033242663469056(swap);93050424524935168(Chuck); 93071805631303680(Sartre)
+89508006265487360(WiFi); 93081565348892672(swap);93141776474456064(TheBachelor);93158780174471168(Vince)
+93150722937470976(President);93548445998129152 (Roger Cheng);93768212558249984(al-Shabab);93661388681125888(BeingSalmanKhan)
+93769818116861953(United_States_Department_of_Veterans_Affairs, Blue Button);93455340603064320(swap);93502515991166976(removed extra Dwayne Wade)
+93942339093004288(swap);94386280988807168(remove health);94429411054583808(Jln Besar stadium);94610076324728833(Oslo, Norway);
+94247453636829184(swap);94521161421041664;94818150943686657(swap); 94826703905488896;95009751389310976(swap);95132090957447168(swap);
+95396113888194560(swap);95182527685337089(youtube);95489083136155649(Judge);95235611476234240(assist removed);95103154651275264(Upper case);
+95535998452240384(Enviromental);95269953741144066;91772743091105793(war removed);95871789216972800(governor removed);
+95895148315164673(swap);95898503749963777(swap);95974630371758080(pipeline added);94808210258669568(extra US removed);95950299218444289(PRICE INDEX removed)
+96405737714098176(extra sidney removed);96203693912891394(al-Assad);96314478047662080;96252784025931776(sawp);96190924983508992(OpPayPal)
+96984948635992065(swap);96587380278050816(swap);96651090807894017(DR);96992650850344961(Internet removed);96985217134366720(swap)
+97081523962003456(Under-19 cricket removed);97017783145070592(swap);97759293780144128;97815160516919296(conference call removed);
+98116519757742080(Under-21, Under-19);98053644682936321(-14);98512343016812545(swap);98869744505073665(The Dow);
+99226394587971585(Xcode, apple);99124519112949762(extra Virginia Tech removed);99273520994992130(Japan);
+99686731250532352(swap);99545215618129921(swap);99618926908018689(KELO);100536116343607296(U.S.);
+100704090522271744(UK);100653353050193920(West Croydon);100860202164830208(Clapham Junction);
+100793214600085504(Bartoli);101065852761284608(al-Assad);100967768018530304(Alex Oxlade Chamberlain);101108656782839809(Assad)
+101260598460940289(swap);101186888085413889(Boris);102016512692453376(swap);
+102041478183927808(Assad);102156455674789888(Prime Minister SilvBerlusconi);102759881064460288(+ states);91885515309187072(Harry Potter);
+91930029465935872;91925590256525312(swap)
+
+-Following s.dlugolinsky@gmail.com's comments, the annotations for the 84778630718308352(swap), 92463363644334080, 99136380634017792(swap,Jiangmen city) tweets have been altered 
+
+-----------------------------------------------------------------
+2014.01.28 -TRAINING (version 1.3.), Guidelines (version 1.1.)
+
+******** Gold standard TRAINING dataset ********
+-Following the comments of s.dlugolinsky@gmail.com, ddahlmeier@googlemail.com, diego.ceccarelli@gmail.com the following tweets have been altered:
+96314478047662080(swap order), 94521161421041664 (removed NASA), 92640767331418113, 92717757963059200, 92791449166422017, 92956597957050369, 95910369452769280, 96190924983508992, 
+97081523962003456, 97759293780144128, 102381137401348098, 92586410363719680
+
+-Following the comments of diego.ceccarelli@gmail.com, disambiguation cases have been resolved:
+http://dbpedia.org/resource/24_Hours->http://dbpedia.org/resource/Day
+http://dbpedia.org/resource/Chris_brown ->http://dbpedia.org/resource/Chris_Brown_(American_entertainer)
+http://dbpedia.org/resource/Social_Security -> http://dbpedia.org/resource/Social_security_system (91651716184948736)
+http://dbpedia.org/resource/Washington -> http://dbpedia.org/resource/Washington,_D.C.
+http://dbpedia.org/resource/Libra -> http://dbpedia.org/resource/Libra_(astrology)
+http://dbpedia.org/resource/Britain -> http://dbpedia.org/resource/United_Kingdom
+http://dbpedia.org/resource/Grand_Theft_Auto -> http://dbpedia.org/resource/Grand_Theft_Auto_(video_game)
+http://dbpedia.org/resource/Giggs->http://dbpedia.org/resource/Ryan_Giggs
+http://dbpedia.org/resource/Producer->http://dbpedia.org/resource/Television_producer
+http://dbpedia.org/resource/Comic-Con->http://dbpedia.org/resource/Central_Canada_Comic_Con
+http://dbpedia.org/resource/Georgia -> http://dbpedia.org/resource/Georgia_(U.S._state) (94213202635788288)
+http://dbpedia.org/resource/Finnish -> http://dbpedia.org/resource/Finnish_people (94247453636829184)
+http://dbpedia.org/resource/Madison_County->http://dbpedia.org/resource/Madison_County,_New_York (98038664147374080)
+http://dbpedia.org/resource/NDP->http://dbpedia.org/resource/New_Democratic_Party_(Canada) (95555792912134144)
+http://dbpedia.org/resource/Milford->http://dbpedia.org/resource/Milford,_New_Hampshire (95114160530141185)
+http://dbpedia.org/resource/Les_Brown->http://dbpedia.org/resource/Les_Brown_(speaker) (91753088574164992)
+http://dbpedia.org/resource/French -> http://dbpedia.org/resource/French_people (96203693912891394)
+http://dbpedia.org/resource/Shell -> http://dbpedia.org/resource/Royal_Dutch_Shell (96473651876077568)
+http://dbpedia.org/resource/Iraqi -> http://dbpedia.org/resource/Iraqi_people (96544175847260160)
+http://dbpedia.org/resource/Rolls-Royce -> http://dbpedia.org/resource/Rolls-Royce_Group_PLC (96229136179281920)
+http://dbpedia.org/resource/Croc -> http://dbpedia.org/resource/Crocodile (96360636384157696)
+-added Cdnpoli (95555792912134144)
+-replaced http://dbpedia.org/resource/Government_of_Ireland -> http://dbpedia.org/resource/Government (91651716184948736)
+-removed http://dbpedia.org/resource/HotSpot
+-removed http://dbpedia.org/resource/OMG
+-removed http://dbpedia.org/resource/Jawa (93038068117942272)
+-removed http://dbpedia.org/resource/Nordiwhite (94586978460385281)
+-removed  Rebecka Schumann  (96369935135158272)
+-removed http://dbpedia.org/resource/Today
+
+******** Guidelines********
+-AstrologicalSign added to the taxonomy
+
+-----------------------------------------------------------------
+2014.02.04 - TRAINING (version 1.4.), Guidelines (version 1.2.)
+
+******** Gold standard TRAINING dataset ********
+-Following the comments of silver.estla@gmail.com, @BreakingNews has been removed from the following tweets: 94480845791956993, 99200989688643584, 101572298175283200 
+
+-Following the comments of changmingwei@gmail.com, the annotations for the following tweets have been altered:
+"the Queen" -> "Queen" (92693524981616640), 
+"The Gang of Six" -> "Gang of Six" (93734032189304832)
+http://dbpedia.org/resource/17_May -> http://dbpedia.org/resource/May_17
+http://dbpedia.org/resource/New_mexico -> http://dbpedia.org/resource/New_Mexico
+http://dbpedia.org/resource/JayZ -> http://dbpedia.org/resource/Jay-Z
+http://dbpedia.org/resource/Associated_press -> http://dbpedia.org/resource/Associated_Press
+the Cardinals->Cardinals
+the Eagles -> Eagles
+
+-Following the comments of s.dlugolinsky@gmail.com, the annotations for the following tweets have been altered:
+93059420296183808, 96665996416397313, 100966586155941888 (# deleted), 93059420296183808 (space->tab), 93525433684983808(+'Israeli intelligence' URI), 98512343016812545 (space)
+
+******** Guidelines********
+-BreakingNews added to the taxonomy, considered as a type of Event
+
+-----------------------------------------------------------------
+2014.02.04 - TRAINING (version 1.5.)
+
+******** Gold standard TRAINING dataset ********
+-Following the comments of m.badiehhabibmorgan@utwente.nl, the annotation for income_tax has been removed in the tweet 92033712904093696
+
+-Further corrections made:
+The Antichrist ->Antichrist (92247182312349696)
+The Southeast -> Southeast (92453059170537474)
+the peer-to-peer network->peer-to-peer network (93081504330162178)
+the US space shuttle Atlantis-> US space shuttle Atlantis (93246093017620480)
+the House and Senate -> House and Senate(93736461454688256)
+the Respect for Marriage Act -> Respect for Marriage Act (93456222954594304)
+The Hubble Space Telescope -> Hubble Space Telescope (94195086182723585)
+The International Monetary Fund ->International Monetary Fund (93899167105167360)
+The Utøya shooter -> Utøya shooter (94518623552552961)
+the Jets -> Jets (95984772718927873)
+The Japanese economy -> Japanese economy (100010138022330368)
+the Giants -> Giants (96185595470159873)
+The Dow -> Dow (98869744505073665)
+the bullingdon -> bullingdon (101186888085413889)
+
+-----------------------------------------------------------------
+2014.02.11 - TRAINING (version 1.6.)
+
+******** Gold standard TRAINING dataset (final version)********
+
+-Following the comments of menabad@gmail.com and changmingwei@gmail.com, some apostrophes and quotes have been removed from the following tweets:
+93047259066925056, 93661388681125888,92229656115286016, 92557111468363776, 92497498207297536, 94209038987952128, 102124541182091264, 102923598414622720
+
+-Following the comments fo menabad@gmail.com, the preposition "the" has been removed from the following tweets:
+The US -> US (93768212558249984)
+The Louise boat -> Louise boat (93412082602622976)
+the Internet -> Internet (96992650850344961)
+
+-Following the comments fo menabad@gmail.com, the entity "government" has been marked in the following tweets:
+98431701365178369, 101664445335474176, 98336270253694977, 101260598460940289
+
+-Following the comments of s.dlugolinsky@gmail.com the following tweets have been amended:
+Android Honeycomb Table->Android Honeycomb Tablet (92045133754793984)
+Joel Campbel->Joel Campbell (102087976670076928)
+Lord->Lords (93063371515105280)
+
+-Following the comments of changmingwei@gmail.com, the following redirects have been resolved:
+http://dbpedia.org/resource/007->http://dbpedia.org/resource/James_Bond_(literary_character)
+http://dbpedia.org/resource/1._FC_Cologne->http://dbpedia.org/resource/1._FC_K%C3%B6ln
+http://dbpedia.org/resource/18_November->http://dbpedia.org/resource/November_18
+http://dbpedia.org/resource/26_January->http://dbpedia.org/resource/January_26
+http://dbpedia.org/resource/6_August->http://dbpedia.org/resource/August_6
+http://dbpedia.org/resource/7/7->http://dbpedia.org/resource/7_July_2005_London_bombings
+http://dbpedia.org/resource/A3_road_(Great_Britain)->http://dbpedia.org/resource/A3_road
+http://dbpedia.org/resource/Alvaro_Pereira->http://dbpedia.org/resource/%C3%81lvaro_Pereira
+http://dbpedia.org/resource/American_people->http://dbpedia.org/resource/Americans
+http://dbpedia.org/resource/Anderson_cooper->http://dbpedia.org/resource/Anderson_Cooper
+http://dbpedia.org/resource/Angela_Simmons->http://dbpedia.org/resource/Run's_House
+http://dbpedia.org/resource/Argus_Filch->http://dbpedia.org/resource/Hogwarts_staff
+http://dbpedia.org/resource/Austin360->http://dbpedia.org/resource/Austin_American-Statesman
+http://dbpedia.org/resource/Bank_of_america->http://dbpedia.org/resource/Bank_of_America
+http://dbpedia.org/resource/Black_race->http://dbpedia.org/resource/Black_people
+http://dbpedia.org/resource/Breaking_News->http://dbpedia.org/resource/Breaking_news
+http://dbpedia.org/resource/CBS_21->http://dbpedia.org/resource/WHP-TV
+http://dbpedia.org/resource/CCTV->http://dbpedia.org/resource/Closed-circuit_television
+http://dbpedia.org/resource/CNN_Money->http://dbpedia.org/resource/CNNMoney.com
+http://dbpedia.org/resource/Cambodian-Thai_border_dispute->http://dbpedia.org/resource/Cambodian%E2%80%93Thai_border_dispute
+http://dbpedia.org/resource/Canadian_politics->http://dbpedia.org/resource/Politics_of_Canada
+http://dbpedia.org/resource/Catherine_II_of_Russia->http://dbpedia.org/resource/Catherine_the_Great
+http://dbpedia.org/resource/Catholic->http://dbpedia.org/resource/Catholicism
+http://dbpedia.org/resource/Chinese_Navy->http://dbpedia.org/resource/People's_Liberation_Army_Navy
+http://dbpedia.org/resource/Christopher_Wallace,_Jr.->http://dbpedia.org/resource/The_Notorious_B.I.G.
+http://dbpedia.org/resource/Cnbc_tv18->http://dbpedia.org/resource/CNBC-TV18
+http://dbpedia.org/resource/Cnn->http://dbpedia.org/resource/CNN
+http://dbpedia.org/resource/Demographics_of_US->http://dbpedia.org/resource/Demographics_of_the_United_States
+http://dbpedia.org/resource/Dietrick_Hall->http://dbpedia.org/resource/Campus_of_Virginia_Tech
+http://dbpedia.org/resource/ENews_Channel->http://dbpedia.org/resource/E!News
+http://dbpedia.org/resource/Editor->http://dbpedia.org/resource/Editing
+http://dbpedia.org/resource/Ephesians->http://dbpedia.org/resource/Epistle_to_the_Ephesians
+http://dbpedia.org/resource/FaceBook->http://dbpedia.org/resource/Facebook
+http://dbpedia.org/resource/Falcon_HTV-2->http://dbpedia.org/resource/Hypersonic_Technology_Vehicle_2
+http://dbpedia.org/resource/Finnish_people->http://dbpedia.org/resource/Finns
+http://dbpedia.org/resource/Florida_People->http://dbpedia.org/resource/List_of_people_from_Florida
+http://dbpedia.org/resource/Fred_Weasley->http://dbpedia.org/resource/Dumbledore's_Army
+http://dbpedia.org/resource/Full_Moon->http://dbpedia.org/resource/Full_moon
+http://dbpedia.org/resource/Goo_Hara->http://dbpedia.org/resource/Goo_Ha-ra
+http://dbpedia.org/resource/Good_Weekend_(Sydney_Morning_Herald)->http://dbpedia.org/resource/The_Sydney_Morning_Herald
+http://dbpedia.org/resource/Google_translate->http://dbpedia.org/resource/Google_Translate
+http://dbpedia.org/resource/Greek_debt_crisis->http://dbpedia.org/resource/Greek_government-debt_crisis
+http://dbpedia.org/resource/Gremio->http://dbpedia.org/resource/Gr%C3%AAmio_Foot-Ball_Porto_Alegrense
+http://dbpedia.org/resource/Grim_Reaper->http://dbpedia.org/resource/Death_(personification)
+http://dbpedia.org/resource/Half-Blood_Prince->http://dbpedia.org/resource/Harry_Potter_and_the_Half-Blood_Prince
+http://dbpedia.org/resource/Harry_Potter_books->http://dbpedia.org/resource/Harry_Potter
+http://dbpedia.org/resource/Harry-Potter->http://dbpedia.org/resource/Harry_Potter
+http://dbpedia.org/resource/Hemel_hempstead->http://dbpedia.org/resource/Hemel_Hempstead
+http://dbpedia.org/resource/Hertfordshire_Police->http://dbpedia.org/resource/Hertfordshire_Constabulary
+http://dbpedia.org/resource/Hynix->http://dbpedia.org/resource/SK_Hynix
+http://dbpedia.org/resource/I-tunes->http://dbpedia.org/resource/ITunes
+http://dbpedia.org/resource/Ice_Age_(2002_film)->http://dbpedia.org/resource/Ice_Age_(film)
+http://dbpedia.org/resource/Immigration_Law->http://dbpedia.org/resource/Immigration_law
+http://dbpedia.org/resource/Israeli_intelligence->http://dbpedia.org/resource/Mossad
+http://dbpedia.org/resource/Italian_government->http://dbpedia.org/resource/Politics_of_Italy
+http://dbpedia.org/resource/Japanese_economy->http://dbpedia.org/resource/Economy_of_Japan
+http://dbpedia.org/resource/Janelle_Monae->http://dbpedia.org/resource/Janelle_Mon%C3%A1e
+http://dbpedia.org/resource/John_cena->http://dbpedia.org/resource/John_Cena
+http://dbpedia.org/resource/July_27th->http://dbpedia.org/resource/July_27
+http://dbpedia.org/resource/Kansas_University->http://dbpedia.org/resource/University_of_Kansas
+http://dbpedia.org/resource/Krabby_Patty->http://dbpedia.org/resource/SpongeBob_SquarePants
+http://dbpedia.org/resource/Lily_Evans->http://dbpedia.org/resource/Order_of_the_Phoenix_(fiction)
+http://dbpedia.org/resource/Londoners->http://dbpedia.org/resource/Londoner
+http://dbpedia.org/resource/Mail_on_Sunday->http://dbpedia.org/resource/The_Mail_on_Sunday
+http://dbpedia.org/resource/Mankato_Moondogs->http://dbpedia.org/resource/Mankato_MoonDogs
+http://dbpedia.org/resource/Member_of_parliament->http://dbpedia.org/resource/Member_of_Parliament
+http://dbpedia.org/resource/Ministry_of_magic->http://dbpedia.org/resource/Ministry_of_Magic
+http://dbpedia.org/resource/Minor_league_baseball->http://dbpedia.org/resource/Minor_League_Baseball
+http://dbpedia.org/resource/Msnbc->http://dbpedia.org/resource/MSNBC
+http://dbpedia.org/resource/NEW_YORK->http://dbpedia.org/resource/New_York
+http://dbpedia.org/resource/NFLPA->http://dbpedia.org/resource/National_Football_League_Players_Association
+http://dbpedia.org/resource/Nasdaq->http://dbpedia.org/resource/NASDAQ
+http://dbpedia.org/resource/Navy_seals->http://dbpedia.org/resource/United_States_Navy_SEALs
+http://dbpedia.org/resource/New_Jersey_Nets->http://dbpedia.org/resource/Brooklyn_Nets
+http://dbpedia.org/resource/News_International->http://dbpedia.org/resource/NI_Group
+http://dbpedia.org/resource/Norwegian_Government->http://dbpedia.org/resource/Politics_of_Norway
+http://dbpedia.org/resource/Norwegian_Police->http://dbpedia.org/resource/Norwegian_Police_Service
+http://dbpedia.org/resource/Noynoy_Aquino->http://dbpedia.org/resource/Benigno_Aquino_III
+http://dbpedia.org/resource/Ohi_Nuclear_Power_Plant->http://dbpedia.org/resource/%C5%8Ci_Nuclear_Power_Plant
+http://dbpedia.org/resource/PETA->http://dbpedia.org/resource/People_for_the_Ethical_Treatment_of_Animals
+http://dbpedia.org/resource/Paypal->http://dbpedia.org/resource/PayPal
+http://dbpedia.org/resource/Pee_Wee_Herman->http://dbpedia.org/resource/Pee-wee_Herman
+http://dbpedia.org/resource/Physicists->http://dbpedia.org/resource/Physicist
+http://dbpedia.org/resource/Pooh->http://dbpedia.org/resource/Winnie-the-Pooh
+http://dbpedia.org/resource/Protestant->http://dbpedia.org/resource/Protestantism
+http://dbpedia.org/resource/RIM->http://dbpedia.org/resource/Rim
+http://dbpedia.org/resource/RSA_Security->http://dbpedia.org/resource/RSA_(security_firm)
+http://dbpedia.org/resource/Ramadan_Massacre->http://dbpedia.org/resource/Siege_of_Hama_(2011)
+http://dbpedia.org/resource/Red_state->http://dbpedia.org/resource/Red_states_and_blue_states
+http://dbpedia.org/resource/Reno_Tahoe_Open->http://dbpedia.org/resource/Reno%E2%80%93Tahoe_Open
+http://dbpedia.org/resource/Reporter->http://dbpedia.org/resource/Journalist
+http://dbpedia.org/resource/Retail_Distribution_Review->http://dbpedia.org/resource/Financial_Services_Authority
+http://dbpedia.org/resource/SCAF->http://dbpedia.org/resource/Supreme_Council_of_the_Armed_Forces
+http://dbpedia.org/resource/SEAL_Team_Six->http://dbpedia.org/resource/United_States_Naval_Special_Warfare_Development_Group
+http://dbpedia.org/resource/10_September->http://dbpedia.org/resource/September_10
+http://dbpedia.org/resource/School_of_Audio_Engineering->http://dbpedia.org/resource/SAE_Institute
+http://dbpedia.org/resource/Scoobydoo->http://dbpedia.org/resource/Scooby-Doo
+http://dbpedia.org/resource/Scottish_and_Southern_Energy->http://dbpedia.org/resource/SSE_plc
+http://dbpedia.org/resource/Sheffield_city_centre->http://dbpedia.org/resource/Sheffield_City_Centre
+http://dbpedia.org/resource/SkyNews->http://dbpedia.org/resource/Sky_News
+http://dbpedia.org/resource/Social_security_system->http://dbpedia.org/resource/Social_security
+http://dbpedia.org/resource/Southend->http://dbpedia.org/resource/Southend-on-Sea
+http://dbpedia.org/resource/Southend_Victoria->http://dbpedia.org/resource/Southend_Victoria_railway_station
+http://dbpedia.org/resource/Sport_news->http://dbpedia.org/resource/Sports_journalism
+http://dbpedia.org/resource/Syrian_government->http://dbpedia.org/resource/Council_of_Ministers_(Syria)
+http://dbpedia.org/resource/Taylor_swift->http://dbpedia.org/resource/Taylor_Swift
+http://dbpedia.org/resource/The_guardian->http://dbpedia.org/resource/The_Guardian
+http://dbpedia.org/resource/Tulsa->http://dbpedia.org/resource/Tulsa,_Oklahoma
+http://dbpedia.org/resource/UEFA_European_Championship->http://dbpedia.org/resource/UEFA_European_Football_Championship
+http://dbpedia.org/resource/US_TV->http://dbpedia.org/resource/Television_in_the_United_States
+http://dbpedia.org/resource/United_States_court->http://dbpedia.org/resource/United_States_federal_courts
+http://dbpedia.org/resource/Vallares->http://dbpedia.org/resource/Genel_Energy
+http://dbpedia.org/resource/Vessels->http://dbpedia.org/resource/Vessel
+http://dbpedia.org/resource/Visa_policy_of_the_United_States->http://dbpedia.org/resource/United_States_visas
+http://dbpedia.org/resource/White_house->http://dbpedia.org/resource/White_House
+http://dbpedia.org/resource/White_race->http://dbpedia.org/resource/White_people
+http://dbpedia.org/resource/Wikileaks->http://dbpedia.org/resource/WikiLeaks
+http://dbpedia.org/resource/WKYT->http://dbpedia.org/resource/WKYT-TV
+http://dbpedia.org/resource/Zach_Walters_(baseball)->http://dbpedia.org/resource/Washington_Nationals_minor_league_players
+
+-----------------------------------------------------------------
+2014.02.11 - TRAINING (version 1.7.)
+
+******** Gold standard TRAINING dataset (final version+)********
+-Cross-consistency checks have been made with the test dataset
+-Following the comments of emilio.deltessa@gmail.com several wrong URIs have been deleted
+
+-----------------------------------------------------------------
+2014.02.21 - TRAINING (version 1.8.), Guidelines (version 1.3.)
+
+******** Gold standard TRAINING dataset (final version++)********
+-Further corrections made
+
+******** Guidelines********
+-Further information about the numerical expressions has been added
+
+-----------------------------------------------------------------
+2014.02.22 - TEST (version 1.0.)
+
+******** Gold standard TEST dataset********
+-First version of GS test dataset created
+
+-----------------------------------------------------------------
+2014.02.24 - TRAINING (version 1.9.)
+
+******** Gold standard TRAINING dataset (final version+++)********
+-Corrected parmesan@spaziodati.eu's comments (89506614285041664, 103137083945783296, 92949506081034240, 100373381538529280, 101020302405931008, 91957731992420352, 91997280936263680, 92691957394051072)
+
+-----------------------------------------------------------------
+2014.03.19 - TEST (version 1.1.)
+
+******** Gold standard TEST dataset********
+-Cross consistency checks with the training dataset were performed
+-Tab issues corrected
+
+-----------------------------------------------------------------
+2014.03.25 - TEST (version 1.2.)
+
+******** Gold standard TEST dataset (final version)********
+-Final adjustification stage performed and the comments of several participants addressed
+-Following the comments of minchang@microsoft.com, some disambiguation cases have been resolved (e.g. chrisbrown)
+-Following the comments of parmesan@spaziodati.eu, the following tweets have been amended:
+*tabs for 93352615743725569, 93388656202620928
+*missing numerical entities have been added to 92665718839054336, 92665718839054336, 92699088658767872, 92938088791285760, 93354062786985985, 93354062786985985, 93424946474258432, 93755852032454656,
+93779352625483776, 94231288889868288, 99087290470629376, 100202414153539585, 100636444078510080, 101336348627173376, 101671774474870785, 102441571353509888, 103120046653583360, 93390911022698496, 
+93400917193404416, 93400230829101056, 93402528036827137, 93412866916495360, 93416562102505472, 93428507501281280, 93487168911187970, 93485634051780608, 93726336643899392, 93600838882295808,
+*incorect uris: 95351348404551681, 91937809920823296
+*missing entities: 92698347529437184, 92700976489832448, 92706706273992706, 93354062786985985, 94013224856453120, 95903901823414272, 95903901823414272, 95903901823414272, 97002463147720705, 98101823776374784,
+102441571353509888, 102441571353509888, 102806874763694080, 93402536375095297, 93451639066865664, 93465811007700992
+
+====================================================
