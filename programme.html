@@ -3,6 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <!-- InstanceBeginEditable name="doctitle" -->
+
+<script type="text/javascript">// <![CDATA[
+    function showHideAbstract(abstractLink){
+        var abstract = document.getElementById(abstractLink);
+        if(!abstract)
+        return true;
+        if(abstract.style.display=="none")
+        abstract.style.display="block";
+        else
+        abstract.style.display="none";
+        
+        return true;
+    }
+// ]]></script>
+
 <title>&#35;Microposts2014 &mdash; 4th Workshop on Making Sense of Microposts</title>
 
     <link rel="shortcut icon" href="images/microposts_logo2014.ico" type="image/vnd.microsoft.icon" />
@@ -62,118 +77,656 @@
 </head>
 
 <body>
-<div id="wrapper"">
+<div id="wrapper">
 	<div id="Layer4">
 	  <div id="Layer2">
-<h2 id="head2"><a href="./index.html">Home &amp; News</a> | <a href="./motivation.html">Motivation &amp; Topics</a> | <a href="./challenge/index.html">Challenge</a> | <!-- a href="../programme.html" --><b>Programme</b><!-- /a --> | <a href="./submission_info.html">Submissions</a> | <a href="./deadlines.html">Dates</a> | <a href="./organisation.html">Organisation</a> | <a href="./contact.html">Contact</a></h2>
+        <h2 id="head2"><a href="index.html">Home &amp; News</a> | <a href="motivation.html">Motivation &amp; Topics</a> | <a href="challenge/index.html">Challenge</a> | <!-- a href="programme.html" --><b>Programme</b><!-- /a --> || <a href="submission_info.html">Submissions</a> | <a href="deadlines.html">Dates</a> | <a href="organisation.html">Organisation</a> | <a href="contact.html">Contact</a></h2>
       </div>
 	  <div id="Layer5">
-      <div align="left">
-        <table width=85%>
-            <tr>
-                <td align="left" width="10%">
-                    <a name="top" id="top"></a><img src="images/microposts_logo2014.png" height="122"/></div>
-                </td>
-                <td width="2%">&nbsp;
-                </td>
-                <td align="left">
-                    <h2>Making Sense of Microposts (&#35;Microposts2014)</h2>
-                    <h4 style="color: #069;"><i>Big things come in small packages</i></h5>
-                </td>
-           </tr>
-        </table>
-	  </div>
+          <div align="left">
+            <table width=85%>
+                <tr>
+                    <td align="left" width="10%">
+                        <a name="top" id="top"></a><img src="images/microposts_logo2014.png" height="122"/>
+                    </td>
+                    <td width="2%">&nbsp;
+                    </td>
+                    <td align="left">
+                        <h2>Making Sense of Microposts (&#35;Microposts2014)</h2>
+                        <h4 style="color: #069;"><i>Big things come in small packages</i></h4>
+                    </td>
+               </tr>
+            </table>
+          </div>
 
-	  <div id="Layer1">
+          <div id="Layer1">
 
-	    <div id="Layer3">
-          <div id="secondary">
-            <div class="meta">
-              <h3>&nbsp;</h3>
-              <!-- InstanceBeginEditable name="linksBox" -->
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="motivation.html">Motivation & Topics</a></li>
+<div id="Layer3">
+    <div id="secondary">
+        <div class="meta">
+            <h3>&nbsp;</h3>
+            <!-- InstanceBeginEditable name="linksBox" -->
+            <ul>
+                <!-- li><a href="index.html">Home</a></li -->
+                <li><a href="motivation.html">Motivation</a></li>
+                <li><a href="motivation.html#topics">Topics</a></li>
                 <li><a href="challenge/index.html">Challenge</a></li>
                 <br />
                 <li><a href="index.html#news">News</a></li>
-                <li><a href="programme.html">Accepted Papers / Programme</a></li>
+                <li><a href="programme.html">Programme</a></li>
                 <li><a href="submission_info.html">Submission Info</a></li>
                 <li><a href="deadlines.html">Important Dates</a></li>
                 <li><a href="organisation.html">Organisation</a></li>
                 <li><a href="contact.html">Contact</a> </li>
                 <br />
                 <li>Previous Workshops<br />
-                <ul>
-                <li><a href="http://oak.dcs.shef.ac.uk/msm2013">&#35;MSM2013</a> @ WWW2013</li>
-                <li><a href="http://socsem.open.ac.uk/msm2012">&#35;MSM2012</a> @ WWW2012</li>
-                <li><a href="http://research.hypios.com/msm2011">&#35;MSM2011</a> @ ESWC2011</li>
-                </ul>
-                <br />
+                    <ul>
+                        <li><a href="http://oak.dcs.shef.ac.uk/msm2013">&#35;MSM2013</a> @ WWW2013</li>
+                        <li><a href="http://socsem.open.ac.uk/msm2012">&#35;MSM2012</a> @ WWW2012</li>
+                        <li><a href="http://research.hypios.com/msm2011">&#35;MSM2011</a> @ ESWC2011</li>
+                    </ul>
+                    <br />
                 </li>
                 <li><a href="http://www2014.kr/" target="_blank">WWW2014</a></li>
-              </ul>
+            </ul>
+            <!-- InstanceEndEditable -->
+        </div>
+    </div>
+</div>
+<!-- end Layer3 -->
+
+            <div id="mainEditRegion">
+              <!-- InstanceBeginEditable name="mainEditRegion" -->
+              <div id="main">
+              
+
+            <div class="sectionwithinset" id="programme_overview">
+                <h3><a name="programme_overview" id="programme_overview"></a>Workshop Programme</h3>
+                
+                <dl style="font-size: 1.2em;">
+                    <dt><h4>Welcome and Keynote Session</h4></dt>
+                    <dd>09:00 &ndash; 09.15: Welcome &amp; Introduction</dd><br />
+                    <dd>09.15 &ndash; 10:30: <a href="#keynote" style="text-decoration: none; border-bottom: none;">Keynote</a></dd><br />
+                    <dd>10:30 &ndash; 10:35: Lightning round &ndash; <a href="#main_track_lightning_round" style="text-decoration: none; border-bottom: none;">posters</a></dd><br />
+                    <dd>10:35 &ndash; 11:00: Tea Break with posters</dd><br />
+                    
+                    <dt><h4>Session II</h4></dt>
+                    <dd>11:00 &ndash; 12.30: <a href="#main_track_session1" style="text-decoration: none; border-bottom: none;">Main track</a> paper presentations</dd><br />
+                    <dd>12:30 &ndash; 14:00: Lunch</dd><br />
+                    
+                    <dt><h4>Session III</h4></dt>
+                    <dd>14:00 &ndash; 15:30: <a href="#main_track_session2" style="text-decoration: none; border-bottom: none;">Main track</a> paper presentations</dd><br />
+                    <dd>15:30 &ndash; 16:00: Tea Break with posters</dd><br />
+                    
+                    <dt><h4>Session IV</h4></dt>
+                    <dd>16:00 &ndash; 16:10: NEEL Challenge Sponsor presentation</dd><br />
+                    <dd>16:10 &ndash; 17:10: <a href="#neel_challenge_presentations" style="text-decoration: none; border-bottom: none;">NEEL Challenge presentations</a></dd><br />
+                    <dd>17:10 &ndash; 17:20: <a href="#neel_challenge_results" style="text-decoration: none; border-bottom: none;">NEEL Challenge Results</a></dd><br />
+
+                    <dt><h4>Awards &amp; Workshop Closing</h4></dt>
+                </dl>
+                
+                <p><img src="images/blank_space.png" height=20></p>
+        </div>
+
+
+        <div class="section" id="main_track">
+            <!-- h3><a name="main_track" id="main_track"></a>Main Track</h3 -->
+    
+            <h3>9:15 &ndash; 10.30: Keynote</h3>
+            
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/wwq1cmxo0v4amcv/keynote_abstract.pdf">Computational Social Science and Microblogs &mdash; The Good, the Bad and the Ugly</a></i><br />Markus Strohmaieir
+            </p>
+            <!--cdiv style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_strohmaier.pdf">presentation</a></div -->
+            <a style="margin-left: 24px;" onmousedown="return showHideAbstract('keynote_abstract')" href="javascript:;">abstract</a>&nbsp;
+            <div id="keynote_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+                According to the Computational Social Science Society of the Americas (CSSSA), computational social science is ÒThe science that investigates social phenomena through the medium of computing and related advanced information processing technologiesÓ. Positioned between the computer and social sciences, this new and emerging interdisciplinary field is fuelled by at least the following two developments: (i) availability of data: With the web, a huge volume of social data is now available which enables the study of traces of social interactions on new scales. (ii) increasing quantification of social theories: With recent advances in the social sciences, social theories become increasingly formal and/or mathematical and thus amenable to quantification. Taken together, these two developments give rise to a whole range of new and interesting problems on the intersection between computer and social sciences. While a multitude of social data is available on the World Wide Web, microblogs are of particular interest due to their real-time nature, their rich social fabric and their presumed on/offline coupling. In this talk, I am going to talk about the potentials and the challenges of doing computational social science based on data obtained from microblogs such as Twitter. In particular, I want to present previous work by my group and others to identify research avenues where progress has already been made or where progress is on the horizon, and contrast these with what I feel are open research challenges in this emerging field. Work that demonstrates the potential of microblogs for computational social science includes for example [1], where we have operationalized a number of theoretical constructs from sociology to characterize the nature of online conversational practices of political parties on Twitter. In another work, we have studied the ways in which usersÕ fields of expertise can be inferred from microblog data [4]. Work that demonstrates the pitfalls and challenges of doing computational social science with microblog data include for ex- ample [5] where we have studied a network of bots who are competing against each other in attacking users on Twitter. In subsequent work, we have found that such attacks have the potential to impact the social graph of Twitter [3], i.e. the network of who follows whom respectively who replies to whom. In other work, [2] have shown that there is a stark difference between the demographics of Twitter and the general population of the US, finding that Twitter users significantly over-represent densely populated regions and are predominantly male. I will argue that these and other factors need to be considered when we aim to unlock the full potential of microblog data for computational social science purposes.
+            </div>
+            <!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_keynote')" href="javascript:;">bibtex</a>
+             <div id="bibtex_keynote" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+             <pre>
+                 
+@InProceedings{microposts2014_strohmaier:2014,
+ author = {Markus Strohmaier},
+ title = {Computational Social Science and Microblogs -- The Good, the Bad and the Ugly},
+ crossref = {proc_microposts2014@www2014},
+ pages = {1--1},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {Social data, computational social science, social behavior, web science, online social networks},
+ url = {http://ceur-ws.org/Vol-1141/keynote_abstract.pdf},
+}
+
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+</pre>
+</div -->
+            
+
+
+                <p>&nbsp;</p>
+                <p><a href="#top" class="style1">back to top</a> </p>
+                <p><img src="images/blank_space.png" height=40></p>
+                    
+                    <h3>10:30&nbsp;&ndash;&nbsp;10:35 <a name="main_track_lightning_round" id="main_track_lightning_round"></a>Lightning Round&nbsp;&ndash;&nbsp; Posters</h3>
+                    <a name="demos" id="demos"></a>
+                    
+                    <p style="margin-left: 18px;">
+                    <i><a href="https://www.dropbox.com/s/zcnv45vuh0ogakz/paper_10.pdf">Sentiment Analysis of Wimbledon Tweets</a></i><br />
+                    Priyanka Sinha, Anirban Dutta Choudhury &amp; Amit Kumar Agrawal<br />
+                    </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_10.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_10_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_10_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Annotating videos in the absence of textual metadata is a major challenge as it involves complex image and video analytics, which is often error prone. However, if the video is a live coverage of an event, time correlated textual feed about the same event can act as a valuable source of aid for such annotation. Popular real time microblog streams like Twitter feeds can be an ideal source of such textual information. In this paper we explore the possibility of such correlation with the sentiment analysis of a set of tweets of the Roger Federer and Novak "Nole" Djokovic semi finals match at Wimbledon 2012.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_10')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_10" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+@InProceedings{microposts2014_sinha.ea:2014,
+ author = {Priyanka Sinha and Anirban Dutta Choudhury and Amit Kumar Agrawal},
+ title = {Sentiment Analysis of {Wimbledon} Tweets},
+ crossref = {proc_microposts2014@www2014},
+ pages = {51--52},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {Twitter, Wimbeldon, Sentiment Analysis, TV},
+ url = {http://ceur-ws.org/Vol-1141/paper_10.pdf},
+}
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+    
+                <p><br />&nbsp;</p>
+                <p><a href="#top" class="style1">back to top</a> </p>
+                <p><img src="images/blank_space.png" height=40></p>
+                    
+                <h3><a name="main_track_papers" id="main_track_papers"></a>11:00&nbsp;&ndash;&nbsp;15.30&nbsp;&nbsp;Main Track&nbsp;&ndash;&nbsp;Paper Presentations</h3><br/>
+
+                <h4><a name="main_track_session1" id="main_track_session1"></a>Micropost Mining &amp; Analysis</h4>
+        
+                11:00&nbsp;&ndash;&nbsp;11:30
+                  <p style="margin-left: 18px;">
+                    <i><a href="https://www.dropbox.com/s/511n5a9219dp27b/paper_04.pdf">Mining Concurrent Topical Activity in Microblog Streams</a></i><br />
+                    Andr&#233; Panisson, Laetitia Gauvin, Marco Quaggiotto, Ciro Cattuto<br />
+                  </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_04.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_04_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_04_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+Abstract
+</div> 
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_04')" href="javascript:;">bibtex</a>
+<div id="bibtex_paper_04" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+    <pre>
+ 
+@InProceedings{microposts2014_panisson.ea:2014,
+ author = {Andr\'e Panisson and Laetitia Gauvin and Marco Quaggiotto and Ciro Cattuto},
+ title = {Mining Concurrent Topical Activity in Microblog Streams},
+ crossref = {proc_microposts2014@www2014},
+ pages = {3--10},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {topic detection, microblogs, matrix and tensor factorization, collective attention, event detection},
+ url = {http://ceur-ws.org/Vol-1141/paper_04.pdf},
+}
+ 
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+    </pre>
+</div -->
+
+                  <p>&nbsp;</p>  
+                
+                  11.30&nbsp;&ndash;&nbsp;12:00
+                  <p style="margin-left: 18px;">
+                    <i><a href="https://www.dropbox.com/s/o1lgxevf98hg1j3/paper_08.pdf">TEA: Episode Analytics on Short Messages</a></i><br />
+                    Prapula G, Soujanya Lanka &amp; Kamalakar Karlapalem<br />
+                  </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_08.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_08_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_08_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Twitter is a widely used micro-blogging service, which in recent times, has become a reliable source of happening news around the world [11]. Breaking news are covered in twitter; the magnitude and volumes of tweets reflecting on the nature and intensity of the news. During events, many tweets are posted either expressing sentiments about the event or just about the occurrence of the event. Events related to an entity that have attracted a large number of tweets can be considered significant in the entity's twitter lifetime. Entity could represent a person, movie, community, electronic gadgets, software products and like wise.In this work, we attempt to automatically detect significant events related to an entity. An episode, is an event of importance; identified by processing the volumes of tweets/posts in a short time.
+    The key features implemented in Tweet Episode Analytics (TEA) system are:
+    (i) detecting episodes among the streaming tweets related to a given entity over a period of time (from the entity's birth i.e., mention in the tweet world till date), (ii) providing visual analytics (like sentiment scoring and frequency of tweets over time) of each episode through graphical interpretation.
+</div> 
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_08')" href="javascript:;">bibtex</a>
+<div id="bibtex_paper_08" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+    <pre>
+@InProceedings{microposts2014_prapulag.ea:2014,
+ author = {Prapula G and Soujanya Lanka and Kamalakar Karlapalem},
+ title = {{TEA}: Episode Analytics on Short Messages},
+ crossref = {proc_microposts2014@www2014},
+ pages = {11--18},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {Tweets, Episode, Text Analytics},
+ url = {http://ceur-ws.org/Vol-1141/paper_08.pdf},
+}
+ 
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+    </pre>
+</div -->
+
+                  <p>&nbsp;</p>  
+            
+                  12:00&nbsp;&ndash;&nbsp;12:30
+                  <p style="margin-left: 18px;">
+                    <i><a href="https://www.dropbox.com/s/r70rj14ikjpyo9p/paper_02.pdf">Sentic API: A Common and Common-Sense Knowledge API for Cognition-Driven Sentiment Analysis</a></i><br />
+                    Erik Cambria, Soujanya Poria, Alexander Gelbukh &amp; Kenneth Kwok<br />
+                  </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_02.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_02_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_02_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+The bag-of-concepts model can represent semantics associated with natural language text much better than bags-of-words. In the bag-of-words model, in fact, a concept such as cloud_computing would be split into two separate words, disrupting the semantics of the input sentence. Working at concept-level is important for tasks such as opinion mining, especially in the case of microblogging analysis. In this work, we present Sentic API, a common-sense based application programming interface for concept-level sentiment analysis, which provides semantics and sentics (that is, denotative and connotative information) associated with 15,000 natural language concepts.
+</div> 
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_02')" href="javascript:;">bibtex</a>
+<div id="bibtex_paper_02" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+    <pre>
+ 
+@InProceedings{microposts2014_cambria.ea:2014,
+ author = {Erik Cambria and Soujanya Poria and Alexander Gelbukh and Kenneth Kwok},
+ title = {{Sentic API}: A Common-Sense Based {API} for Concept-Level Sentiment Analysis},
+ crossref = {proc_microposts2014@www2014},
+ pages = {19--24},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {Natural language processing; Sentiment analysis},
+ url = {http://ceur-ws.org/Vol-1141/paper_02.pdf},
+}
+
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+    </pre>
+</div -->
+
+                  <p>&nbsp;<b</p>
+                  <p><img src="images/blank_space.png" height=10></p>
+            
+            
+                <h4><a name="main_track_session2" id="main_track_session2"></a>Micropost Classification &amp; Extraction</h4>
+                
+                14:00&nbsp;&ndash;&nbsp;14:30
+                <p style="margin-left: 18px;">
+                <i><a href="https://www.dropbox.com/s/i8w0zzdcno5sm1c/paper_01.pdf">Evaluating Multi-label Classification of Incident-related Tweets</a></i><br />
+                Axel Schulz, Eneldo Loza Menc&#237;a, Thanh Tung Dang and Benedikt Schmidt<br />
+                </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_01.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_01_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_01_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Microblogs are an important source of information in emergency management as lots of situational information is shared, both by citizens and official sources. It has been shown that incident-related information can be identified in the huge amount of available information using machine learning. Nevertheless, the currently used classification techniques only assign a single label to a micropost, resulting in a loss of important information that would be valuable for crisis management.
+    With this paper we contribute the first in-depth analysis of multi-label classification of incident-related tweets. We present an approach assigning multiple labels to these messages, providing additional information about the situation at-hand. An evaluation shows that multi-label classification is applicable for detecting multiple labels with an exact match of 84.35%. Thus, it is a valuable means for classifying incident-related tweets. Furthermore, we show that correlation between labels can be taken into account for these kinds of classification tasks.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_01')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_01" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+@InProceedings{microposts2014_schulz.ea:2014,
+ author = {Axel Schulz and Eneldo Loza Menc\'ia and Thanh Tung Dang and Benedikt Schmidt},
+ title = {Evaluating Multi-label Classification of Incident-related Tweets},
+ crossref = {proc_microposts2014@www2014},
+ pages = {26--33},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {Microblogs, Multi-label Learning,  Social Media},
+ url = {http://ceur-ws.org/Vol-1141/paper_01.pdf},
+}
+ 
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+ </pre>
+ </div -->
+
+            <p>&nbsp;</p>
+            
+            14:30&nbsp;&ndash;&nbsp;15:00
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/1pxv5z9ax4ri6br/paper_09.pdf">Combining Named Entity Recognition Methods for Concept Extraction in Microposts</a></i><br />
+            &#352;tefan Dlugolinsk&#253;, Peter Krammer, Marek Ciglan, Michal Laclav&#237;k, Ladislav Hluch<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_09.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_09_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_09_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    NER in microposts is a key and challenging task of mining semantics from social media. Our evaluation of a number of popular NE recognizers over a micropost dataset has shown a significant drop-off in results quality. Current state-of-the-art NER methods perform much better on formal text than on microposts. However, the experiment provided us with an interesting observation -- although individual NER tools did not perform very well on micropost data, we have received recall over 90% when we merged all the results of the examined tools. This means that if we would be able to combine different NE recognizers in a meaningful way, we might be able to get NER in microposts of an acceptable quality. In this paper, we propose a method for NER in microposts, which is designed to combine annotations yielded by existing NER tools in order to produce more precise results than input tools alone. We combine NE recognizers utilizing ML
+    techniques, namely decision tree and random forest using the C4.5 algorithm. The main advantage of the proposed method lies in the possibility of combining arbitrary NER methods and in its application on short, informal texts. The evaluation on a standard dataset shows that the proposed approach outperforms underlying NER methods as well as a baseline recognizer, which is a simple combination of the best underlying recognizers for each target NE class. To the best of our knowledge, up-to-date, the proposed approach achieves the highest F<span style="vertical-align:sub;">1</span> score on the &#35;MSM2013 dataset.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_09')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_09" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+@InProceedings{microposts2014_dlugolinsky.ea:2014,
+ author = {\v{S}tefan Dlugolinsk\'y and Peter Krammer and Marek Ciglan and Michal Laclav\'ik and Ladislav Hluch\'y},
+ title = {Combining Named Entity Recognition Methods for Concept Extraction in {Microposts}},
+ crossref = {proc_microposts2014@www2014},
+ pages = {34--41},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {named entity recognition, machine learning, microposts},
+ url = {http://ceur-ws.org/Vol-1141/paper_09.pdf},
+}
+ 
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+ </pre>
+ </div -->
+
+            <p>&nbsp;</p>
+            
+            15:00&nbsp;&ndash;&nbsp;15:30
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/0w5nggkwdny43ox/paper_06.pdf">HG-RANK: A Hypergraph-based Keyphrase Extraction for Short Documents in Dynamic Genre</a></i><br />
+            Abdelghani Bellaachia and Mohammed Al-Dhelaan<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/main_track/microposts2014_paper_06.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_06_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_06_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Conventional keyphrase extraction algorithms are applied to a fixed corpus of lengthy documents where keyphrases distinguish documents from each other. However, with the emergence of social networks and microblogs, the nature of such documents has changed. Documents are now of short length and evolve topics which require specific algorithms to capture all features. In this paper, we propose a hypergraph-based ranking algorithm that models all the features in a random walk approach. Our random walk approach uses weights of both hyperedges and vertices to model short documents' temporal and social features, as well as discriminative weights for word features respectively, while measuring the centrality of words in the hypergraph. We empirically test the effectiveness of our approach in two different data sets of short documents and show that our approach has an improvement of 14% to 25% in precision over the closest baseline in a Twitter data set and 10% to 27% in the Opinosis data set.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_06')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_06" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+@InProceedings{microposts2014_bellaachia.ea:2014,
+ author = {Abdelghani Bellaachia and Mohammed Al-Dhelaan},
+ title = {{HG-Rank}: A Hypergraph-based Keyphrase Extraction for Short Documents in Dynamic Genre},
+ crossref = {proc_microposts2014@www2014},
+ pages = {42--49},
+ booktitle = {4th Workshop on Making Sense of Microposts {(\#Microposts2014)}},
+ year = 2014,
+ keywords = {Text hypergraphs; Keyphrase extraction; Random walks; Short documents; Hypergraph random walks},
+ url = {http://ceur-ws.org/Vol-1141/paper_06.pdf},
+}
+ 
+@Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+}
+ </pre>
+ </div -->
+
+
+            <p><br />&nbsp;</p>
+            <p><a href="#top" class="style1">back to top</a> </p>
+            <p><img src="images/blank_space.png" height=40></p>
+    
+    
+            <h3><a name="neel_challenge_presentations" id="neel_challenge_presentations"></a>16:10 &ndash; 17.10: NEEL Challenge Presentations &amp; Results</h3>
+
+
+            <p>&nbsp;</p>
+            16:10&nbsp;&ndash;&nbsp;16:20
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/gii7mdc0q9m6ylf/paper_13.pdf">Named Entity Extraction and Linking Challenge: University of Twente at &#35;Microposts2014</a></i><br />
+            Mena B. Habib, Maurice van Keule &amp; Zhemin Zhu<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_13.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_13_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_13_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Twitter is a potentially rich source of continuously and instantly updated information.
+    Shortness and informality of tweets are challenges for Natural Language Processing
+    (NLP) tasks. In this paper we present a hybrid approach for Named Entity Extraction (NEE) and Linking (NEL) for tweets. Although NEE and NEL are two topics that are well studied in literature, almost all approaches treated the two problems separately. We believe that disambiguation (linking) could help improving the extraction process. We call this potential for mutual improvement, the reinforcement effect. It mimics the way humans understand natural language. Furthermore, our proposed approaches handles uncertainties involved in the two processes by considering possible alternatives.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_13')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_13" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+
+
+            <p><br />&nbsp;</p>
+            16:20&nbsp;&ndash;&nbsp;16:30
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/arlm6rmat6whecg/paper_15.pdf">Adapting AIDA for Tweets</a></i><br />
+            Mohamed Amir Yosef, Johannes Hoffart, Yusra Ibrahim, Artem Boldyrev &amp; Gerhard Weikum<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_15.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_15_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_15_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    This paper presents our system for the "Making Sense of Microposts 2014 (&#35;Microposts2014)" challenge. Our system is based on AIDA, an existing system that links entity mentions in natural language text to their corresponding canonical entities in a knowledge base (KB). AIDA collectively exploits the prominence of entities, contextual similarities, and coherence to effectively disambiguate entity mentions. The system was originally developed for clean and well-structured text (e.g. news articles). We adapt it for microposts, specifically tweets, with special focus on the named entity recognition and the entity candidate lookup.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_15')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_15" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+
+
+
+            <p><br />&nbsp;</p>
+            16:30&nbsp;&ndash;&nbsp;16:40
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/sw13n5j4u8h7png/paper_18.pdf">E2E: An End-to-end Entity Linking System for Short and Noisy Text</a></i><br />
+            Ming-Wei Chang, Bo-June Hsu, Hao Ma, Ricky Loynd &amp; Kuansan Wang<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_18.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_18_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_18_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    We present E2E, an end-to-end entity linking system that is designed for short and noisy text found in microblogs and text messages. Mining and extracting entities from short text is an essential step for many content analysis applications. By jointly optimizing entity recognition and disambiguation as a single task, our system can process short and noisy text robustly.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_18')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_18" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+
+
+
+            <p><br />&nbsp;</p>
+            16:40&nbsp;&ndash;&nbsp;16:50
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/oh4cvci69bkwvny/paper_19.pdf">DataTXT at &#35;Microposts2014 Challenge</a></i><br />
+            Ugo Scaiella, Michele Barbera, Stefano Parmesan, Gaetano Prestia, Emilio Del Tessandoro &amp; Mario Ver&#237;<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_19.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_19_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_19_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    In this paper we describe the approach taken for the "Making Sense of Microposts challenge 2014" (&#35;Microposts2014), where participants were asked to cross reference micro-posts extracted from Twitter with DBpedia URIs belonging to a given taxonomy.
+    For this task we deployed <span style="font-variant:small-caps;">dataTXT</span> which is the evolution of [3], the state-of-the-art topic annotator for short texts and which has proven to be very effective and efficient in several challenging scenarios [2].
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_19')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_19" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+   
+   
+            <p>&nbsp;</p>
+            <!-- p><img src="images/blank_space.png" height=5>
+                <a name="neel_challenge_lightning_talks"></a>
+                </p>
+            <h4>16:50&nbsp;&ndash;&nbsp;17:00 NEEL Lightning Round</h4 -->
+
+            16:50&nbsp;&ndash;&nbsp;17:00
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/earnz8eh4sb3gdy/paper_16.pdf">Linking Entities in &#35;Microposts</a></i><br />
+            Romil Bansal, Sandeep Panem, Priya Radhakrishnan, Manish Gupta &amp; Vasudeva Varma<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_16.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_16_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_16_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Social media has emerged to be an important source of information. Entity linking in social media provides an effective way to extract useful information from microposts shared by the users. Entity linking in microposts is a difficult task as they lack sufficient context to disambiguate the entity mentions. In this paper, we do entity linking by first identifying entity mentions and then disambiguating the mentions based on three different features: (1) similarity between the mention and the corresponding Wikipedia entity pages; (2) similarity between the mention and the tweet text with the anchor text strings across multiple webpages, and  (3) popularity of the entity on Twitter at the time of disambiguation. The system is tested on the manually annotated dataset provided by Named Entity Extraction and Linking (NEEL) Challenge 2014, and the obtained results are on par with the state-of-the-art methods.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_16')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_16" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+   
+
+            <p><br />&nbsp;</p>
+            17:00&nbsp;&ndash;&nbsp;17:10
+            <p style="margin-left: 18px;">
+            <i><a href="https://www.dropbox.com/s/80tudz9lr4xurtw/paper_20.pdf">Part-of-Speech is (almost) enough: SAP Research &amp; Innovation at the &#35;Microposts2014 NEEL Challenge</a></i><br />
+            Daniel Dahlmeier, Naveen Nandan &amp; Wang Ting<br />
+            </p>
+<!-- div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_20.pdf">presentation</a></div -->
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper_20_abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper_20_abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    This paper describes the submission of the SAP Research &amp; Innovation
+    team at the &#35;Microposts2014 NEEL Challenge. We use a two-stage
+    approach for named entity extraction and linking, based on conditional
+    random fields and an ensemble of search APIs and rules,
+    respectively. A surprising result of our work is that part-of-speech
+    tags alone are almost sufficient for entity extraction. Our results for
+    the combined extraction and linking task on a development and test
+    split of the training set are 34.6% and 37.2% F<span style="vertical-align:sub;">1</span> score,
+    respectively, and for the test set is 37%.
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_20')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_20" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+    
+
+            <!--p><br />&nbsp;</p>
+            16:50&nbsp;&ndash;&nbsp;17:00
+            <p style="margin-left: 18px;">
+            <i>Title</i><br />
+            Authors<br />
+            </p>
+<div style="margin-left: 24px;"><a href="presentations/neel_challenge/microposts2014_paper_.pdf">presentation</a></div>
+<a style="margin-left: 24px;" onmousedown="return showHideAbstract('paper__abstract')" href="javascript:;">abstract</a>&nbsp;
+<div id="paper__abstract" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 9pt;margin-left: 36px;">
+    Abstract
+</div>
+<!-- a style="margin-left: 24px;" onmousedown="return showHideAbstract('bibtex_paper_')" href="javascript:;">bibtex</a>
+ <div id="bibtex_paper_" style="display: none; background-color: #e8e8e8; font-family: Helvetica; font-size: 8pt;margin-left: 36px;">
+ <pre>
+ 
+ @Proceedings{proc_microposts2014@www2014,
+ title = {Proceedings, 4th Workshop on Making Sense of Microposts {(\#Microposts2014)}: Big things come in small packages, Seoul, Korea, 7th April 2014},
+ year = 2014,
+ booktitle = {Making Sense of Microposts {(\#Microposts2014)}},
+ editor = {Matthew Rowe and Milan Stankovic and Aba-Sah Dadzie},
+ month = {April},
+ url = {http://ceur-ws.org/Vol-1141},
+ }
+ </pre>
+ </div -->
+
+
+                <p>&nbsp;</p>
+                <p><img src="images/blank_space.png" height=5>
+                    <a name="neel_challenge_results"></a>
+                </p>
+                <h3>17:10&nbsp;&ndash;&nbsp;17:20 </a>NEEL Challenge Results</h3>
+                <p style="margin-left: 18px; font-size: 1.2em;">
+                <i>Named Entity Extraction &amp; Linking (NEEL) Challenge: <!-- a href="neel_challenge/challenge_results_summary.pdf">Summary of Results</a --></i></span>
+                </p>
+
+                <p><img src="images/blank_space.png" height=10></p>
+                <p><a href="#top" class="style1">back to top</a> </p>
+
+                </div>
+        
+              </div><!-- end div - main -->
               <!-- InstanceEndEditable -->
             </div>
-          </div>
-        </div>
-        <!-- end Layer3 -->
-
-        <div id="mainEditRegion">
-          <!-- InstanceBeginEditable name="mainEditRegion" -->
-          <div id="main">
-          
-
-            <div class="sectionwithinset" id="introduction">
-              <h3>Programme</h3>
-	      
-		9:00 - 10.30: Welcome and Keynote Session
-	      <ul>
-		<li>9:00 - 9.15: Welcome and Introduction</li>
-		<li>9.15 - 10:30: Keynote Talk: Prof. Markus Strohmaieir - Computational Social Science and Microblogs</li>		
-	      </ul>
-		10.30- 11:00: Tea Break<br/><br/>
-		11:00 - 12.30: Micropost Mining and Analysis
-		<ul>
-			<li>11:00 - 11.30: Mining Concurrent Topical Activity in Microblog Streams. Andre Panisson, Laetitia Gauvin, Marco Quaggiotto and Ciro Cattuto.</li>
-			<li>11.30 - 12:00: TEA: Episode Analytics on Short Messages. Prapula G, Soujanya Lanka and Kamalakar Karlapalem</li>
-			<li>12:00 - 12:30: Sentic API: A Common and Common-Sense Knowledge API for Cognition-Driven Sentiment Analysis. Erik Cambria</li>
-		</ul>
-		12.30 - 14:00: Lunch<br/><br/>
-		14:00 - 15:30: Micropost Classification and Extraction
-		<ul>
-			<li>14:00 - 14:30: Evaluating Multi-label Classification of Incident-related Tweets. Axel Schulz, Eneldo Loza Mencia, Thanh Tung Dang and Benedikt Schmidt</li>
-			<li>14:30 - 15:00: Combining Named Entity Recognition Methods for Concept Extraction in Microposts. Stefan Dlugolinsky, Peter Krammer, Marek Ciglan, Michal Laclavik and Ladislav Hluchy</li>
-			<li>15:00 - 15:30 HG-RANK: A Hypergraph-based Keyphrase Extraction for Short Documents in Dynamic Genre. Abdelghani Bellaachia and Mohammed Al-Dhelaan.</li>
-			</ul>
-		15:30 - 16:00: Tea Break<br/><br/>
-		16:00 - 17.30: NEEL Challenge Presentations and Results
-		<ul>
-			<li>16:00 - 16:10: A word from our sponsor</li>
-			<li>16:10 - 17:10: NEEL Challenge Presentations</li>
-			<li>17:10 - 17:20: NEEL Challenge Results</li>
-		</ul>
-		17:20 - 17:30: Workshop Closing: Awards
-
-              
-                <!--<ul>
-			<li>Evaluating Multi-label Classification of Incident-related Tweets. Axel Schulz, Eneldo Loza Mencia, Thanh Tung Dang and Benedikt Schmidt.</li>
-			<li>Mining Concurrent Topical Activity in Microblog Streams. Andre Panisson, Laetitia Gauvin, Marco Quaggiotto and Ciro Cattuto.</li>
-			<li>HG-RANK: A Hypergraph-based Keyphrase Extraction for Short Documents in Dynamic Genre. Abdelghani Bellaachia and Mohammed Al-Dhelaan.</li>
-			<li>TEA: Episode Analytics on Short Messages. Prapula G, Soujanya Lanka and Kamalakar Karlapalem</li>
-			<li>Combining Named Entity Recognition Methods for Concept Extraction in Microposts. Stefan Dlugolinsky, Peter Krammer, Marek Ciglan, Michal Laclavik and Ladislav Hluchy</li>
-		</ul>
-		
-		<h4>The workshop's programme is to follow soon.</h4>-->
-
-              <p><a href="#top" class="style1">back to top</a> </p>
-            </div>
-                    
-          </div>
-          <!-- InstanceEndEditable -->
-        </div>
-      </div>
-  </div>
-</div>
+          </div><!-- end Layer1 -->
+        </div><!-- end Layer5 -->
+    </div><!-- end Layer4 -->
+  </div><!-- end div - wrapper -->
 </body>
 <!-- InstanceEnd --></html>
